@@ -25,6 +25,9 @@ jobs:
         tofu_version: 1.7.2
         tofu_wrapper: false
 
+    - name: Tofu Init
+      run: tofu Init --recursive
+
     - name: Tofu fmt
       run: tofu fmt --recursive
 
